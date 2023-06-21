@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.mainContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  width: 50%;
+  height: 500px;
+}
+
+.AddUserContainer {
+  padding: 10px;
+}
+
+.addIcon {
+  margin-left: 10px;
+  color: white;
+}
+
+.searchContainer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.iconsContainer {
+  margin-left: 15px;
+}
+
+.listItemContainer {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  align-items: center;
+  width: 90%;
+  background-color: whitesmoke;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.avatar-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.AddBtnContainer {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(115, 188, 188);
+  color: white;
+  padding: 10px;
+}
+
+/* Mobile Styles */
+
+@media (max-width: 768px) {
+  .mainContainer {
+    width: 80%;
+    height: auto;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .listItemContainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainContainer {
+    width: 90%;
+  }
+
+  .AddUserContainer {
+    padding: 5px;
+  }
+
+  .listItemContainer {
+    width: 95%;
+  }
+}
